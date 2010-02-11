@@ -1,0 +1,7 @@
+name = Rentasite
+description = Specifies requirements for rentasite platform.
+dependencies[] = admin
+dependencies[] = nodewords_basic
+package = Core - required
+version = "6.x-0.1"
+core = "6.x"
