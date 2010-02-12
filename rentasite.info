@@ -23,5 +23,5 @@ dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = vertical_tabs
 package = Core - required
-version = "6.x-0.1"
+version = "6.x-0.2"
 core = "6.x"
