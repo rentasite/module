@@ -14,6 +14,7 @@ dependencies[] = imce
 dependencies[] = jquery_ui
 dependencies[] = jquery_update
 dependencies[] = libraries
+dependencies[] = menu
 dependencies[] = nodewords
 dependencies[] = nodewords_basic
 dependencies[] = path
