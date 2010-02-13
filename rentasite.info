@@ -22,6 +22,7 @@ dependencies[] = pathauto
 dependencies[] = schema
 dependencies[] = strongarm
 dependencies[] = token
+dependencies[] = transliteration
 dependencies[] = vertical_tabs
 package = Core - required
 version = "6.x-0.2"
