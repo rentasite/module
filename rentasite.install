@@ -1,0 +1,63 @@
+<?php
+
+/**
+ * Implementation of hook_install().
+ *
+ * Initial settings for entire platform. Must be helpfull when migrating from 
+ * default and other profiles.
+ */
+function rentasite_install() {
+  // Minified compression by default
+  variable_set('jquery_update_compression_type','min');
+
+  // Nodewords metatags settings
+  variable_set('nodewords_edit', array(
+    'description'   => 'description',
+    'abstract'      => 0,
+    'canonical'     => 0,
+    'copyright'     => 0,
+    'keywords'      => 0,
+    'revisit-after' => 0,
+    'robots'        => 0,
+  ));
+  variable_set('nodewords_head', array(
+    'description'   => 'description',
+    'abstract'      => 0,
+    'canonical'     => 0,
+    'copyright'     => 0,
+    'keywords'      => 0,
+    'revisit-after' => 0,
+    'robots'        => 0,
+  ));
+
+  // IMCE profile for trusted users
+  $user_profile = array(
+    'name'        => 'Users',
+    'extensions'  => 'gif png jpg jpeg doc docx rtf txt xls csv odt ods pdf',
+    'directories' => array(
+      array(
+        'name' => 'users/u%uid',
+        'subnav' => 1,
+        'browse' => 1,
+        'upload' => 1,
+        'thumb'  => 1,
+        'delete' => 1,
+        'resize' => 1,
+      ),
+      array(
+        'name'   => 'users/pub',
+        'subnav' => 0,
+        'browse' => 1,
+        'upload' => 1,
+        'thumb'  => 1,
+        'delete' => 0,
+        'resize' => 1,
+      ),
+    ),
+  );
+  $imce_profiles = variable_get('imce_profiles', array());
+  $imce_profiles[3] = array_merge($imce_profiles[1],$user_profile);
+  variable_set('imce_profiles', $imce_profiles);
+
+  //TODO: Use htmlpurifier filter for full-html input format
+}
