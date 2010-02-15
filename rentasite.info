@@ -25,5 +25,5 @@ dependencies[] = token
 dependencies[] = transliteration
 dependencies[] = vertical_tabs
 package = Core - required
-version = "6.x-0.2"
+version = "6.x-0.3"
 core = "6.x"
