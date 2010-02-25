@@ -19,7 +19,6 @@ dependencies[] = nodewords
 dependencies[] = nodewords_basic
 dependencies[] = path
 dependencies[] = pathauto
-dependencies[] = schema
 dependencies[] = strongarm
 dependencies[] = token
 dependencies[] = transliteration
