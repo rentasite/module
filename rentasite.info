@@ -1,7 +1,6 @@
 name = Rentasite
 description = Specifies requirements for rentasite platform.
 dependencies[] = admin
-dependencies[] = better_formats
 dependencies[] = captcha
 dependencies[] = context
 dependencies[] = context_contrib
@@ -9,8 +8,6 @@ dependencies[] = context_ui
 dependencies[] = ctools
 dependencies[] = diff
 dependencies[] = features
-dependencies[] = htmlpurifier
-dependencies[] = imce
 dependencies[] = jquery_ui
 dependencies[] = jquery_update
 dependencies[] = libraries
